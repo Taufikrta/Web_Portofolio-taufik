@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Page</title>
+    <!-- link css -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- header -->
+    <section class="sub-header">
+        <nav>
+            <a href="index.html">
+                <div class="letter-container">
+                    <div class="letter">𝕽</div>
+                </div>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()" ></i>
+        </nav>
+        <h1>About me</h1>
+    </section>
+    <!-- end header -->
+
+    <!-- about us content -->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>About Me</h1>
+                <p>Of course! The following is a description for your portfolio as a fresh graduate focusing on interior design and fine arts:
+
+                    As a fresh graduate who is passionate about interior design and fine arts, my portfolio reflects my dedication and creativity in creating beautiful and functional environments. Through my attached projects, I have demonstrated my ability to combine aesthetics and function to create spaces that captivate and meet clients' needs.
+                    
+                    In every project, I always pay attention to the small details and prioritize client satisfaction. I have expertise in designing room layouts, selecting furniture, materials and colors in accordance with the agreed design concept. Apart from that, I also have skills in hand sketching, 3D rendering, and using design software such as Sketchup, AutoCad, and Coreldraw.
+                    
+                    With my educational background as a Geography Bachelor's degree graduate and experience during education and internships, I believe that this portfolio reflects my potential and deep interest in the interior design and fine arts industry. I hope to make valuable contributions in future projects and continue to develop my skills and knowledge in this field.</p>
+                <a href="/project and art/projectart.html" class="hero-btn red-btn">My Project and Art work</a>
+            </div>
+            <div class="about-col">
+                <img src="">
+            </div>
+        </div>
+
+    </section>
+    <!-- end conten about -->
+<!-- Section FOoter-->
+<section class="footer">
+    <div class="footer">
+        <p>click to contact me</p>
+        <div class="icons">
+            <i class="fa fa-whatsapp" onclick="openWhatsApp()"></i>
+            <i class="fa fa-instagram"onclick="openInstagramProfile()"></i>
+            <i class="fa fa-phone" onclick="openGmail()"></i>
+        </div>
+        <script>
+            function openInstagramProfile() {
+                window.open('https://www.instagram.com/t__rahmann');
+            }
+            
+            function openWhatsApp() {
+                window.open('https://wa.me/628816299831');
+            }
+            
+            function openGmail() {
+                window.open('mailto:taufikrtaqq@gmail.com');
+            }
+            </script>
+    </div>
+</section>
+<!-- End footer  -->
+
+
+    <!-- javascript for Toogle Menu -->
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+</html>
